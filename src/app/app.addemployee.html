@@ -1,0 +1,17 @@
+<h2>Show All Employee</h2>
+
+<table border="1">
+    <tr>
+        <th>Book Id</th>
+        <th>Book Title</th>
+        <Th>Book Author</Th>
+        <th>Book Publish Of Year</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let em of empAll;let i=index">
+        <td>{{em.bookId}}</td>
+        <td>{{em.bookTitle}}</td>
+        <td>{{em.bookauthor}}</td>
+        <td>{{em.publishyear}}</td>
+        <td><input type="button" value="delete" (click)="deleteEmp(i)"/></tr>
+</table>
